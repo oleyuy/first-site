@@ -1,0 +1,16 @@
+{%extends 'test_app/layout.html'%}
+
+
+{%block title%}deleting news{%endblock%} 
+
+{%block content%}
+    <div class="features">
+        <h1>News delete form</h1>
+        <form method="post">
+            {%csrf_token%}
+            <a href="javascript:history.back()" class="btn btn-secondary">back</a>
+            <button class="btn btn-success" type = "submit">delete news</button>
+        </form>
+        
+    </div>
+{%endblock%} 

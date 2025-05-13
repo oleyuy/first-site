@@ -65,3 +65,54 @@ aside ul a {
 }
 .features-main h1{font-size: 50px;color: #3ab58e;}
 .features-main p{max-width: 800px;margin: 20px auto;color: #fff;}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* або center, або space-between */
+    padding: 20px;
+}
+
+.alert {
+    flex: 0 1 calc(33.333% - 40px); /* 3 блоки в ряд */
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+form {
+    width: 500px;
+    margin: 30px auto; /* центрируем */
+}
+
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: vertical;
+    font-size: 16px;
+}
+input.form-control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.alert .btn-warning {
+   position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+}
+
+

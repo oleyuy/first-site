@@ -1,14 +1,23 @@
 {%extends 'test_app/layout.html'%}
 
-{%block title%}test page{%endblock%} 
+{%block title%}test app{%endblock%} 
 
 {%block content%}
     <div class="features">
-        <h1>test page</h1>
+        <h1>test app</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ex totam doloribus voluptas quae deserunt voluptatibus fuga dolores veritatis harum iusto facilis pariatur, cum nemo, aspernatur maiores sit beatae error.</p>
             <button class="btn btn-warning">
-                на страницу про нас
+                    на страницу про нас                
             </button>
+        {%for el in values%}
+            {%if el == 'hello'%}
+                    <p>{{el|upper}}</p>               
+            {%endif%}
+        {%endfor%}
+
+        {%for el,value in obj.items%}
+            <p>{{value}}</p>
+        {%endfor%}
     </div>
 {%endblock%} 
 
